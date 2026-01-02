@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "UTC",
+  "schedule": [
+    "before 3am on Monday"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "enabled": true
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "coverage"
+  ]
+}
