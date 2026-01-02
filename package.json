@@ -1,0 +1,11 @@
+{
+  "name": "unified-projects-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build:all": "npm run build --workspaces",
+    "test:all": "npm test --workspaces"
+  }
+}
