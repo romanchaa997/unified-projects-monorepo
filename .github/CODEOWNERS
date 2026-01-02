@@ -1,0 +1,24 @@
+# Code Owners for unified-projects-monorepo
+# This file defines who should review PRs for specific parts of the repository
+
+# Root level configurations and documentation
+* @romanchaa997
+
+# GitHub workflows and CI/CD
+.github/ @romanchaa997
+.github/workflows/ @romanchaa997
+
+# Root configuration files
+/.eslintrc.json @romanchaa997
+/.prettierrc.json @romanchaa997
+/tsconfig.base.json @romanchaa997
+/package.json @romanchaa997
+
+# Monobank SDK Package
+/packages/monobank-sdk/ @romanchaa997
+
+# Manus Zapier Integration Package
+/packages/manus-zapier/ @romanchaa997
+
+# Smart Bakhmach IoT Package
+/packages/smart-bakhmach-iot/ @romanchaa997
